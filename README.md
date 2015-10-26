@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * Basic knowledge about **[Powershell][Powershell link]**
-* Basic knowledge about ** [Microsoft Azure][Azure link]**
+* Basic knowledge about **[Microsoft Azure][Azure link]**
 
 ---
 
@@ -11,7 +11,11 @@
 1. How to install Powershell Azure Preview
 2. 
 
-
+- [ ] a bigger project
+  - [ ] first subtask #1234
+  - [ ] follow up subtask #4321
+  - [ ] final subtask cc @mention
+- [ ] a separate task
 
 
 
