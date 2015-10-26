@@ -1,7 +1,7 @@
 # Azure Resource Manager Quickstart
 
 In this tutorial we will learn how to setup and provision a Virtual Machine on _Azure_ with little
-or no knowledge about _Powershell_ or _Azure_ using Azure Resource Manager (ARM). I will only touch the surface of the topics and instead provide the reader with useful links 
+or no knowledge about _Powershell_ or _Azure_ using the Azure Resource Manager (ARM). I will only touch the surface of the topics and instead provide the reader with useful links 
 that describes the topics in depth.  
 
 ## Prerequisites
@@ -11,7 +11,7 @@ that describes the topics in depth.
 
 ---
 
-###In this tutorial we will learn how to; 
+###In this tutorial we will learn how to 
 1. Install _Azure Powershell 1.0 Preview_ module  
   * Import and install
 2. Login to _Azure Account_
@@ -23,15 +23,25 @@ that describes the topics in depth.
 ---
 ##How to install [Powershell 1.0.1 Preview]
 
-First you must check that the current logged in user is allowed to executecute scripts
+**Import and install**  
+
+The first thing you have to do is to check if you have permission to run scripts on you local computer. This can be
+made by executing the following [Cmdlet][Cmdlet Overview]
+```PowerShell
+Get-ExecutionPolicy
+```
+
+If the result is _Restricted_ you must enable it by executing   
 
 ```PowerShell
-Get-ExecutionPolicy -
-Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+There are several different execution policies that can be used but we will not cover them here. If you want to know more about them
+you can read [here][Execution Policy]
+
 Install-Module AzureRM
 Install-AzureRM
 
-```
 
 
 ```PowerShell
@@ -52,7 +62,7 @@ To get started with Azure Resource Manager (referred form here on as ARM) you mu
 [Azure link]  
 [PowershellGallery link]  
 [PowershellGallery2 link]  
-[Powershell 1.0 Preview]  
+[Powershell 1.0.1 Preview]  
 
 
 
@@ -61,15 +71,9 @@ To get started with Azure Resource Manager (referred form here on as ARM) you mu
 [PowershellGallery link]: https://www.powershellgallery.com/
 [PowershellGallery2 link]: https://github.com/Azure/azure-powershell/releases/tag/v1.0.0-preview-gallery-October2015
 [Powershell 1.0.1 Preview]: https://www.powershellgallery.com/packages/AzureRM/
-
-
-
-
-
-
-
-
-
-
+[Azure Quickstart Templates]: https://azure.microsoft.com/en-us/documentation/templates/
+[Azure Quickstart Templates Github]: https://github.com/Azure/azure-quickstart-templates
+[Cmdlet Overview]: https://technet.microsoft.com/en-us/library/ms714395(v=vs.85).aspx
+[Execution Policy]: https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/
 [To the top](#azure-resource-manager-quickstart)
 
