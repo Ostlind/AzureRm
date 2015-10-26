@@ -24,7 +24,62 @@
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
 
-`Login-azure`
+```PowerShell
+#AzureRm Getting Started Script
+
+Set-StrictMode -Version Latest
+
+#Login
+
+#Login-AzureRmAccount
+
+
+# Initialize variables
+$subscriptionName = "Visual Studio Premium with MSDN"
+
+$location = "North Europe"
+
+$resourceGroupName = "FabioFirstResourceGroup"
+
+$storageAccountName = "fabiostorageacccount"
+
+$scriptRootParent = Split-Path -Path $PSScriptRoot -Parent
+
+$scriptRootParent = "D:\Azure"
+
+$templateUriVM = "$scriptRootParent\azure-quickstart-templates\101-simple-windows-vm\azuredeploy.json"
+
+$templateParemterFile = "$scriptRootParent\azure-quickstart-templates\101-simple-windows-vm\azuredeploy.parameters.json"
+
+# Create new resource group
+
+New-AzureRmResourceGroup -Name $resourceGroupName -Location $location
+
+$deploymentParrameter =  @{ Name = "VmDeployment"; ResourceGroupName = $resourceGroupName; TemplateUri = $templateUriVM; TemplateParameterFile = $templateParemterFile  }
+
+New-AzureRmResourceGroupDeployment @deploymentParrameter 
+
+# Get subscriptions
+
+Get-AzureRmSubscription –SubscriptionName $subscriptionName| Select-AzureRmSubscription 
+
+Set-AzureRmCurrentStorageAccount –ResourceGroupName $resourceGroupName –StorageAccountName $storageAccountName | Out-Null
+
+
+Get-AzureRmResourceGroup -Name $resourceGroupName
+
+
+Get-AzureRmStorageAccount -ResourceGroupName  $resourceGroupName -Name $storageAccountName | Set-AzureRmCurrentStorageAccount | Out-Null
+
+#Get-AzureRmStorageAccount | Get-AzureStorageContainer | Get-AzureStorageBlob
+
+Remove-AzureRmResourceGroup -Name $resourceGroupName -Force
+
+
+
+
+
+```
 =======
 Azure Resource Manager related tutorials and content
 
@@ -32,7 +87,7 @@ Azure Resource Manager related tutorials and content
 
 
 ## Useful Links 
-```powershell
+```PowerShell
  Login-AzureRm
  ```
 
