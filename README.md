@@ -1,3 +1,5 @@
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 # Azure Resource Manager Quickstart
 
 In this tutorial we will learn how to setup and provision a Virtual Machine on _Azure_ with little
@@ -13,6 +15,7 @@ that describes the topics in depth.
 
 ###In this tutorial we will learn how to 
 1. Install _Azure Powershell 1.0 Preview_ module  
+  * Enable Script Execution
   * Import and install
 2. Login to _Azure Account_
 3. How to create a _Azure Subscription Profile_
@@ -23,25 +26,27 @@ that describes the topics in depth.
 ---
 ##How to install [Powershell 1.0.1 Preview]
 
-**Import and install**  
+**Enable script execution**  
 
-The first thing you have to do is to check if you have permission to run scripts on you local computer. This can be
+To begin with you have to make sure that you have permission to run scripts on you local computer. This can be
 made by executing the following [Cmdlet][Cmdlet Overview]
 ```PowerShell
 Get-ExecutionPolicy
 ```
-
 If the result is _Restricted_ you must enable it by executing   
 
 ```PowerShell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
-There are several different execution policies that can be used but we will not cover them here. If you want to know more about them
-you can read [here][Execution Policy]
+There are several different execution policies that can be used but we will not cover them here. If you want to know more you can read [here][Execution Policy]
 
-Install-Module AzureRM
+**Import and Install**
+
+```PowerShell
+Install-Module AzureRM  
 Install-AzureRM
 
+```
 
 
 ```PowerShell
@@ -54,8 +59,7 @@ Login-AzureRmAccount
 To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
 
 ![Concept](http://trevorsullivan.net/wp-content/uploads/2015/08/2015-09-06-16_59_10-New-notification-1024x707.png)
-=======
-
+Source
 ## Useful Links 
 
 [Powershell link]  
