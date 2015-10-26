@@ -21,7 +21,10 @@ that describes the topics in depth.
 3. How to create a _Azure Subscription Profile_
 4. Create new _Resource Group_
 5. Use _Azure Quick Templates_ **Json** files 
-6. Deploy Resources to Azure Preview Portal  
+6. Deploy Resources to Azure Preview Portal    
+ * Using inline parameters  
+ * Using parameter object  
+ * Using parameter file  
 
 ---
 ##How to install [Powershell 1.0.1 Preview]
@@ -41,6 +44,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 There are several different execution policies that can be used but we will not cover them here. If you want to know more you can read [here][Execution Policy]
 
 **Import and Install**
+
+Under the hood powershell will use the powershellget
 
 ```PowerShell
 Install-Module AzureRM  
