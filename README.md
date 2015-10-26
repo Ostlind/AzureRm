@@ -1,4 +1,4 @@
-# Azure Resource Manager Quick Start
+# Azure Resource Manager Quickstart
 
 ## Prerequists
 
@@ -15,7 +15,7 @@ Azure Resource Manager related tutorials and content
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must hava valid Azure subscription.
 
-` Login-azure `
+`Login-azure`
 =======
 Azure Resource Manager related tutorials and content
 
