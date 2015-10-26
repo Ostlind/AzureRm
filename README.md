@@ -45,7 +45,6 @@ There are several different execution policies that can be used but we will not 
 ```PowerShell
 Install-Module AzureRM  
 Install-AzureRM
-
 ```
 
 
@@ -79,5 +78,6 @@ Source
 [Azure Quickstart Templates Github]: https://github.com/Azure/azure-quickstart-templates
 [Cmdlet Overview]: https://technet.microsoft.com/en-us/library/ms714395(v=vs.85).aspx
 [Execution Policy]: https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/
+[PowershellGet]: http://blogs.msdn.com/b/mvpawardprogram/archive/2014/10/06/package-management-for-powershell-modules-with-powershellget.aspx 
 [To the top](#azure-resource-manager-quickstart)
 
