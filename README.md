@@ -21,11 +21,12 @@ that describes the topics in depth.
 6. Deploy Resources to Azure Preview Portal  
 
 ---
-##How to install [Powershell 1.0 Preview]
+##How to install [Powershell 1.0.1 Preview]
 
-First you must check that the current logged in user is allowed to execute cute scripts
+First you must check that the current logged in user is allowed to executecute scripts
 
 ```PowerShell
+Get-ExecutionPolicy -
 Set-ExecutionPolicy RemoteSigned
 Install-Module AzureRM
 Install-AzureRM
@@ -42,7 +43,7 @@ Login-AzureRmAccount
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
 
-
+![Concept](http://trevorsullivan.net/wp-content/uploads/2015/08/2015-09-06-16_59_10-New-notification-1024x707.png)
 =======
 
 ## Useful Links 
@@ -59,7 +60,7 @@ To get started with Azure Resource Manager (referred form here on as ARM) you mu
 [Azure link]: https://azure.microsoft.com/en-us/
 [PowershellGallery link]: https://www.powershellgallery.com/
 [PowershellGallery2 link]: https://github.com/Azure/azure-powershell/releases/tag/v1.0.0-preview-gallery-October2015
-[Powershell 1.0 Preview]: https://azure.microsoft.com/en-us/blog/azps-1-0-pre/
+[Powershell 1.0.1 Preview]: https://www.powershellgallery.com/packages/AzureRM/
 
 
 
