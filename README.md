@@ -175,4 +175,4 @@ Azure Resource Manager related tutorials and content
 
 
 
-[Link to Header](#Azure Resource Manager Quickstart)
+[Link to Header](#azure-resource-manager-quickstart)
