@@ -43,7 +43,6 @@ Azure Resource Manager related tutorials and content
 [PowershellGallery link]: https://www.powershellgallery.com/
 [PowershellGallery2 link]: https://github.com/Azure/azure-powershell/releases/tag/v1.0.0-preview-gallery-October2015
 [Powershell 1.0 preview Blog]: https://azure.microsoft.com/en-us/blog/azps-1-0-pre/
-<<<<<<< HEAD
 
 
 
@@ -122,5 +121,3 @@ Azure Resource Manager related tutorials and content
 
 
 [Link to Header](#Azure Resource Manager Quickstart)
-=======
->>>>>>> 5b247f1f8d3719b7c6581db5be76099eb0813fb3
