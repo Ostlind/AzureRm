@@ -11,7 +11,7 @@
 1. How to install Powershell Azure Preview
 2. 
 
-- [ ] a bigger project
+- [x] a bigger project
   - [ ] first subtask #1234
   - [ ] follow up subtask #4321
   - [ ] final subtask cc @mention
