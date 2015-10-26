@@ -7,10 +7,16 @@
 
 ---
 
-This is a small tutorial about how to get started with Azure Resource Manager. Basic knowledge about powershell is required. 
+####This tutorial will go through 
+1. How to install Powershell Azure Preview
+
+
+`Login-AzureRm`
+
 
 
 ## Subscription
+---
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must hava valid Azure subscription.
 
@@ -28,3 +34,6 @@ Azure Resource Manager related tutorials and content
 
 [Powershell link]: http://powershell.com/cs/
 [Azure link]: https://azure.microsoft.com/en-us/
+[PowershellGallery link]: https://www.powershellgallery.com/
+[PowershellGallery2 link]: https://github.com/Azure/azure-powershell/releases/tag/v1.0.0-preview-gallery-October2015
+[Powershell 1.0 preview Blog]: https://azure.microsoft.com/en-us/blog/azps-1-0-pre/
