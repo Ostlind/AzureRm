@@ -9,16 +9,16 @@
 
 ####This tutorial will go through 
 1. How to install Powershell Azure Preview
+2. 
 
 
-`Login-AzureRm`
 
 
 
 ## Subscription
 ---
 
-To get started with Azure Resource Manager (referred form here on as ARM) you must hava valid Azure subscription.
+To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
 
 `Login-azure`
 =======
@@ -28,7 +28,9 @@ Azure Resource Manager related tutorials and content
 
 
 ## Useful Links 
-
+```powershell
+ Login-AzureRm
+ ```
 
 
 
