@@ -59,7 +59,7 @@ Login-AzureRmAccount
 
 ## Subscription
 ---
-
+{% gist f57dfd9f066b743e5e77 %}
 <script src="https://gist.github.com/Ostlind/f57dfd9f066b743e5e77.js"></script>
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
