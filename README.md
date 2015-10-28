@@ -17,6 +17,14 @@ that describes the topics in depth.
 1. Install _Azure Powershell 1.0 Preview_ module  
   * Enable Script Execution
   * Import and install
+  * Uninstall the AzureRM component modules
+Uninstall-AzureRM
+
+# Uninstall AzureRM module
+Uninstall-Module AzureRM
+
+# Uninstall the Azure module
+Uninstall-Module Azure
 2. Login to _Azure Account_
 3. How to create a _Azure Subscription Profile_
 4. Create new _Resource Group_
@@ -43,7 +51,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 There are several different execution policies that can be used but we will not cover them here. If you want to know more you can read [here][Execution Policy]
 
-**Import and Install**
+**Import, Install and Uninstall**
 
 If you haven't downloaded the AzureRm module you can do it by using [Cmdlets][Cmdlet Overview] from [PowershellGet]. PowershellGet is built on top of the [OneGet] component and it enables simplified package management of [PowerShell modules] 
 
@@ -55,10 +63,6 @@ Install-Module AzureRM
 ### To Install ARM cmdlet modules
 Update-AzureRM
 ```
-
-
-
-
 #### Import
 After the modules are installed you can import AzureRM modules into your session. AzureRm is splitted into component modules for example cmdlets that relates to storage can be found in the AzureRm.storage module. 
 This is how you import the AzureRm storage module
@@ -73,6 +77,16 @@ If you want to import all of the modules
 Import-AzureRM
 ```
 
+#### Uninstall 
+
+```PowerShell
+# Uninstall the AzureRM component modules
+Uninstall-AzureRM
+
+# Uninstall AzureRM module
+Uninstall-Module AzureRM
+```
+
 # Login to _Azure Account_
 
 Before we start to work with ARM we have to login. After excuting this command you will be prompted to enter your username and password of your _Azure_ subscription
@@ -83,12 +97,11 @@ Login-AzureRmAccount
 
 ## Subscription
 ---
-=======
+
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
 
 ![Concept](http://trevorsullivan.net/wp-content/uploads/2015/08/2015-09-06-16_59_10-New-notification-1024x707.png)
-Source
 ## Useful Links 
 
 [Powershell link]  
