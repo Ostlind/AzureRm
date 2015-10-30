@@ -7,9 +7,10 @@ or no knowledge about _Powershell_ or _Azure_ using the Azure Resource Manager (
 that describes the topics in depth.  
 
 ## Prerequisites
-
+* An **[Azure account]**
 * Basic knowledge about **[Powershell][Powershell link]**
 * Basic knowledge about **[Microsoft Azure][Azure link]**
+* Azure PowerShell
 
 ---
 
@@ -18,18 +19,12 @@ that describes the topics in depth.
   * Enable Script Execution
   * Import and install
   * Uninstall the AzureRM component modules
-Uninstall-AzureRM
-
-# Uninstall AzureRM module
-Uninstall-Module AzureRM
-
-# Uninstall the Azure module
-Uninstall-Module Azure
 2. Login to _Azure Account_
-3. How to create a _Azure Subscription Profile_
-4. Create new _Resource Group_
-5. Use _Azure Quick Templates_ **Json** files 
-6. Deploy Resources to Azure Preview Portal    
+3. Azure Subscription
+4. How to create a _Azure Subscription Profile_
+5. Create new _Resource Group_
+6. Use _Azure Quick Templates_ **Json** files 
+7. Deploy Resources to Azure Preview Portal    
  * Using inline parameters  
  * Using parameter object  
  * Using parameter file  
@@ -87,21 +82,26 @@ Uninstall-AzureRM
 Uninstall-Module AzureRM
 ```
 
-# Login to _Azure Account_
+## Login to Azure Account
 
 Before we start to work with ARM we have to login. After excuting this command you will be prompted to enter your username and password of your _Azure_ subscription
 ```PowerShell
 ### To login to ARM
 Login-AzureRmAccount
 ```
-
-## Subscription
 ---
-
+## Azure Subscription
 
 To get started with Azure Resource Manager (referred form here on as ARM) you must have valid Azure subscription.
 
 ![Concept](http://trevorsullivan.net/wp-content/uploads/2015/08/2015-09-06-16_59_10-New-notification-1024x707.png)
+
+---
+## Create new Resource Group
+---
+## Use AzureRm Quick Templates  
+--
+
 ## Useful Links 
 
 [Powershell link]  
@@ -110,22 +110,22 @@ To get started with Azure Resource Manager (referred form here on as ARM) you mu
 [PowershellGallery2 link]  
 [Powershell 1.0.1 Preview]  
 
-Fabbe
 <script src="https://gist.github.com/Ostlind/f57dfd9f066b743e5e77.js"></script>
 <script src="https://gist.github.com/Ostlind/f57dfd9f066b743e5e77.js"></script>
 
-[Powershell link]: http://powershell.com/cs/
-[Azure link]: https://azure.microsoft.com/en-us/
-[PowershellGallery]: https://www.powershellgallery.com/
-[PowershellGallery2 link]: https://github.com/Azure/azure-powershell/releases/tag/v1.0.0-preview-gallery-October2015
-[Powershell 1.0.1 Preview]: https://www.powershellgallery.com/packages/AzureRM/
-[Azure Quickstart Templates]: https://azure.microsoft.com/en-us/documentation/templates/
-[Azure Quickstart Templates Github]: https://github.com/Azure/azure-quickstart-templates
-[Cmdlet Overview]: https://technet.microsoft.com/en-us/library/ms714395(v=vs.85).aspx
-[Execution Policy]: https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/
-[PowershellGet]: http://blogs.msdn.com/b/mvpawardprogram/archive/2014/10/06/package-management-for-powershell-modules-with-powershellget.aspx 
-[PowershellGet Tutorial 1]: http://blogs.msdn.com/b/mvpawardprogram/archive/2014/10/06/package-management-for-powershell-modules-with-powershellget.aspx 
-[OneGet]: https://github.com/oneget/oneget
-[Powershell modules]: https://technet.microsoft.com/en-us/library/dd878324(v=vs.85).aspx
+[Powershell link]:                  http://powershell.com/cs/
+[Azure link]:                       https://azure.microsoft.com/en-us/
+[PowershellGallery]:                https://www.powershellgallery.com/
+[PowershellGallery2 link]:          https://github.com/Azure/azure-powershell/releases/tag/v1.0.0-preview-gallery-October2015
+[Powershell 1.0.1 Preview]:         https://www.powershellgallery.com/packages/AzureRM/
+[Azure Quickstart Templates]:       https://azure.microsoft.com/en-us/documentation/templates/
+[Azure Quickstart Templates Github]:https://github.com/Azure/azure-quickstart-templates
+[Cmdlet Overview]:                  https://technet.microsoft.com/en-us/library/ms714395(v=vs.85).aspx
+[Execution Policy]:                 https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/
+[PowershellGet]:                    http://blogs.msdn.com/b/mvpawardprogram/archive/2014/10/06/package-management-for-powershell-modules-with-powershellget.aspx 
+[PowershellGet Tutorial 1]:         http://blogs.msdn.com/b/mvpawardprogram/archive/2014/10/06/package-management-for-powershell-modules-with-powershellget.aspx 
+[OneGet]:                           https://github.com/oneget/oneget
+[Powershell modules]:               https://technet.microsoft.com/en-us/library/dd878324(v=vs.85).aspx
+[Azure account]:                    https://azure.microsoft.com/en-us/pricing/free-trial/
 [To the top](#azure-resource-manager-quickstart)
 
